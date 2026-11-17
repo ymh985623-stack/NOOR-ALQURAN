@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b18">
+<meta name="description" content="نور القرآن - القرآن الكريم والأذكار والأدعية ومواقيت الصلاة">
+<title>نور القرآن | NOOR AL-QURAN</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#071b18;--panel:#0e2924;--panel2:#12352d;--gold:#d9b66f;--gold2:#f1d99e;--text:#f7f3e9;--muted:#a9bcb3;--line:#ffffff16;--shadow:0 18px 55px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#1b4a3c 0,transparent 38%),var(--bg);color:var(--text);font-family:'Cairo',sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#071b18eF;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:20px}.logo{width:43px;height:43px;border:1px solid #d9b66f88;border-radius:15px;display:grid;place-items:center;color:var(--gold);font-size:25px;background:linear-gradient(145deg,#1c493c,#0a211c)}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:600}.navlinks{display:flex;gap:7px;flex-wrap:wrap}.navlinks a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;font-size:13px}.navlinks a:hover{color:var(--gold2);background:#ffffff0b}.theme{background:transparent;color:var(--gold);border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.hero{padding:65px 0 36px;text-align:center;position:relative;overflow:hidden}.hero:before{content:"۞";position:absolute;left:4%;top:10px;font-size:170px;color:#d9b66f09}.eyebrow{color:var(--gold);font-size:13px;letter-spacing:2px}.hero h1{font-family:'Amiri',serif;font-size:clamp(42px,7vw,76px);margin:8px 0 2px;color:var(--gold2);font-weight:700}.hero p{color:var(--muted);margin:0 auto 24px;max-width:650px}.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.btn{border:1px solid #d9b66f66;background:linear-gradient(135deg,#d9b66f,#a77c36);color:#14231d;border-radius:13px;padding:11px 20px;font-weight:800}.btn.secondary{background:#ffffff08;color:var(--gold2);border-color:var(--line)}
+.quote{margin:12px auto 38px;max-width:850px;padding:24px;border:1px solid #d9b66f55;border-radius:22px;background:linear-gradient(120deg,#12352d,#0b241f);box-shadow:var(--shadow);text-align:center}.quote .arabic{font:28px 'Amiri',serif;color:var(--gold2);line-height:1.8}.quote small{color:var(--muted)}
+.section{padding:25px 0 38px;scroll-margin-top:85px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}.section-head h2{margin:0;font-size:25px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.gold{color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(145deg,#12352d,#0b241f);border:1px solid var(--line);border-radius:19px;padding:19px;box-shadow:var(--shadow)}.feature{min-height:145px}.feature .ico{font-size:27px;color:var(--gold)}.feature h3{margin:8px 0 3px}.feature p{color:var(--muted);font-size:13px;margin:0}
+.prayer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.citybox{display:flex;gap:7px;flex-wrap:wrap}.field{background:#061713;color:var(--text);border:1px solid var(--line);border-radius:11px;padding:10px 12px;outline:none;min-width:130px}.field:focus{border-color:var(--gold)}.prayers{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:17px}.pray{background:#102b24;border:1px solid var(--line);border-radius:16px;padding:16px 8px;text-align:center}.pray.active{border-color:var(--gold);background:linear-gradient(145deg,#244b3b,#102b24)}.pray b{display:block;color:var(--gold2);font-size:14px}.pray strong{display:block;font-size:21px;margin-top:6px}.countdown{text-align:center;color:var(--muted);margin-top:14px;font-size:14px}.countdown strong{color:var(--gold2)}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.toolbar .field{flex:1;min-width:180px}.surah-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.surah{display:flex;align-items:center;gap:12px;text-align:right;background:#102b24;border:1px solid var(--line);color:var(--text);padding:13px;border-radius:14px;width:100%}.surah:hover{border-color:#d9b66f99;transform:translateY(-1px)}.num{width:35px;height:35px;display:grid;place-items:center;border:1px solid #d9b66f66;color:var(--gold);transform:rotate(45deg);border-radius:9px;flex:none}.num span{transform:rotate(-45deg)}.surah-info{flex:1}.surah-info b{display:block}.surah-info small{color:var(--muted)}.surah .sname{font:21px 'Amiri',serif;color:var(--gold2)}
+.reader{display:none;margin-top:18px}.reader.show{display:block}.reader-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.reader-head h3{font:30px 'Amiri',serif;color:var(--gold2);margin:0}.ayah{font:25px/2.2 'Amiri',serif;text-align:center;padding:18px 10px;border-bottom:1px solid var(--line);color:#f6eedc}.ayah span{display:inline-block;color:var(--gold);font:14px 'Cairo',sans-serif;border:1px solid #d9b66f66;border-radius:50%;width:27px;height:27px;line-height:25px;margin:0 5px}.ayah-actions{display:flex;justify-content:center;gap:8px;margin:12px 0 20px;flex-wrap:wrap}
+.dua-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.dua{background:#102b24;border:1px solid var(--line);border-radius:17px;padding:18px}.dua h3{color:var(--gold2);margin:0 0 8px}.dua p{font:23px/2 'Amiri',serif;margin:0}.dua small{color:var(--muted);display:block;margin-top:10px}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{border:1px solid var(--line);background:#102b24;color:var(--muted);border-radius:10px;padding:8px 14px}.tab.active{color:#10251e;background:var(--gold);border-color:var(--gold);font-weight:800}
+.counter{text-align:center;padding:28px}.counter-num{font-size:65px;font-weight:900;color:var(--gold2);margin:10px}.counter button{margin:5px}.dhikr{font:25px 'Amiri',serif;color:var(--gold2)}
+.footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);font-size:12px;margin-top:20px}.footer b{color:var(--gold)}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#e6d19e;color:#15231d;padding:10px 17px;border-radius:12px;box-shadow:var(--shadow);display:none;z-index:50;font-weight:700}
+body.light{--bg:#f5f0e4;--panel:#fff;--panel2:#f4ead4;--text:#1a3028;--muted:#62736a;--line:#233d301c;--shadow:0 12px 35px #42351b12;background:radial-gradient(ellipse at 80% -10%,#e3d4a8 0,transparent 38%),var(--bg)}
+body.light header{background:#f5f0e4ed}body.light .card,body.light .quote,body.light .pray,body.light .surah,body.light .dua,body.light .tab{background:#fff}body.light .field{background:#fff;color:#1a3028}body.light .ayah{color:#203a30}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.surah-list{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.prayers{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.hero{padding:45px 0 25px}.grid,.dua-grid{grid-template-columns:1fr}.surah-list{grid-template-columns:1fr}.prayers{grid-template-columns:repeat(2,1fr)}.section-head h2{font-size:21px}.quote .arabic{font-size:23px}.ayah{font-size:22px}.brand{font-size:17px}}
+</style>
+</head>
+<body>
+<style>
+#intro{
+position:fixed;inset:0;z-index:99999;
+background:radial-gradient(circle at center,#174b3b,#061711 75%);
+display:flex;align-items:center;justify-content:center;
+text-align:center;color:#f5dfaa;
+transition:opacity 1s,visibility 1s;
+}
+#intro .content{padding:25px;animation:introShow 1.5s ease}
+#intro .symbol{font-size:75px;color:#e6c47d;
+text-shadow:0 0 35px #e6c47d88}
+#intro h1{font-family:serif;font-size:48px;margin:12px 0}
+#intro p{color:#d4c8a9;line-height:2}
+#intro button{
+border:1px solid #f1d99e;background:linear-gradient(135deg,#f1d99e,#b68b42);
+color:#173126;padding:14px 32px;border-radius:30px;
+font-size:17px;font-weight:bold;margin-top:20px;
+}
+#intro .skip{display:block;background:none;border:0;color:#cbbd9b;font-size:13px;margin:12px auto}
+#intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+@keyframes introShow{
+from{opacity:0;transform:translateY(25px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+
+<div id="intro">
+ <div class="content">
+  <div class="symbol">۞</div>
+  <h1>نُورُ الْقُرْآن</h1>
+  <p>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <p>السَّكِينَةُ تَبْدَأُ مِنْ هُنَا</p>
+  <button onclick="enterNoor()">ابدأ رحلتك الإيمانية ←</button>
+  <button class="skip" onclick="enterNoor()">تخطي المقدمة</button>
+ </div>
+</div>
+
+<script>
+function enterNoor(){
+ const intro=document.getElementById('intro');
+ intro.classList.add('hide');
+ setTimeout(()=>intro.remove(),1100);
+}
+</script>
+
+<header><div class="wrap nav">
+ <div class="brand"><div class="logo">۞</div><div>نور القرآن<small>NOOR AL-QURAN</small></div></div>
+ <nav class="navlinks"><a href="#prayer">الصلاة</a><a href="#quran">القرآن</a><a href="#azkar">الأذكار</a><a href="#tasbih">المسبحة</a></nav>
+ <button class="theme" id="themeBtn" aria-label="تغيير المظهر">☀️ / 🌙</button>
+</div></header>
+<main class="wrap">
+<section class="hero">
+ <div class="eyebrow">بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+ <h1>نور القرآن</h1>
+ <p>مساحتك اليومية للسكينة والطمأنينة — اقرأ القرآن، وتعلّم الأذكار، وتابع مواقيت الصلاة أينما كنت.</p>
+ <div class="hero-actions"><a class="btn" href="#quran" style="text-decoration:none">اقرأ القرآن الكريم</a><a class="btn secondary" href="#prayer" style="text-decoration:none">مواقيت الصلاة</a></div>
+</section>
+<div class="quote"><div class="eyebrow">آيَةٌ لِلْيَوْم</div><div class="arabic" id="dailyAyah">﴿ فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ﴾</div><small id="dailyRef">سورة الشرح — ٦</small></div>
+
+<section class="section" id="prayer">
+ <div class="section-head"><div><h2>🕌 مواقيت الصلاة</h2><p>تابع أوقات الصلاة حسب مدينتك</p></div></div>
+ <div class="card">
+  <div class="prayer-top"><div><b class="gold" id="cityLabel">القاهرة، مصر</b><div style="color:var(--muted);font-size:12px" id="hijriDate">جارٍ تحميل التاريخ...</div></div>
+   <div class="citybox"><input class="field" id="cityInput" value="Cairo" placeholder="المدينة بالإنجليزية"><button class="btn" id="cityBtn">تحديث</button><button class="btn secondary" id="geoBtn">موقعي</button></div>
+  </div>
+  <div class="prayers" id="prayerGrid"><div class="pray">جارٍ تحميل المواقيت...</div></div>
+  <div class="countdown" id="countdown">يتم حساب الصلاة القادمة...</div>
+  <div style="color:var(--muted);font-size:11px;text-align:center;margin-top:8px">المواقيت تقديرية وفق طريقة الحساب المختارة، وقد تختلف دقائق بسيطة عن توقيت الجهة الرسمية في منطقتك.</div>
+ </div>
+</section>
+
+<section class="section" id="quran">
+ <div class="section-head"><div><h2>📖 القرآن الكريم</h2><p>القرآن كاملًا — ١١٤ سورة</p></div></div>
+ <div class="toolbar"><input class="field" id="surahSearch" placeholder="ابحث عن اسم السورة أو رقمها..."><button class="btn secondary" id="allSurahs">كل السور</button></div>
+ <div class="surah-list" id="surahList"><div class="card">جارٍ تحميل قائمة السور...</div></div>
+ <div class="reader card" id="reader">
+  <div class="reader-head"><h3 id="readerTitle">سورة الفاتحة</h3><button class="btn secondary" id="closeReader">إغلاق ✕</button></div>
+  <div class="ayah-actions"><button class="btn" id="playSurah">▶ استماع للسورة</button><button class="btn secondary" id="stopAudio">إيقاف الصوت</button></div>
+  <div id="ayahContainer"></div>
+  <div class="ayah-actions"><button class="btn secondary" id="favSurah">☆ حفظ السورة في المفضلة</button></div>
+ </div>
+</section>
+
+<section class="section" id="azkar">
+ <div class="section-head"><div><h2>🤲 الأذكار والأدعية</h2><p>اجعل لسانك رطبًا بذكر الله</p></div></div>
+ <div class="tabs"><button class="tab active" data-tab="morning">أذكار الصباح</button><button class="tab" data-tab="evening">أذكار المساء</button><button class="tab" data-tab="duas">أدعية متنوعة</button></div>
+ <div class="dua-grid" id="duaList"></div>
+</section>
+
+<section class="section" id="tasbih">
+ <div class="section-head"><div><h2>📿 المسبحة الإلكترونية</h2><p>سبّح واستغفر واحتسب الأجر عند الله</p></div></div>
+ <div class="card counter"><div class="dhikr" id="dhikrText">سُبْحَانَ اللَّهِ</div><div class="counter-num" id="counter">0</div><button class="btn" id="countBtn">تسبيح +١</button><button class="btn secondary" id="resetBtn">إعادة التصفير</button><div style="color:var(--muted);font-size:12px;margin-top:12px">اضغط على زر التسبيح لزيادة العدّاد</div></div>
+</section>
+<section class="section">
+ <div class="grid">
+  <div class="card feature"><div class="ico">🌿</div><h3>ذكر الله</h3><p>«ألا بذكر الله تطمئن القلوب» — الرعد: ٢٨</p></div>
+  <div class="card feature"><div class="ico">💛</div><h3>عمل صالح</h3><p>اجعل لك كل يوم وردًا من القرآن والذكر.</p></div>
+  <div class="card feature"><div class="ico">✨</div><h3>شارك الخير</h3><p>الدال على الخير كفاعله — شارك الموقع مع من تحب.</p><button class="btn secondary" id="shareBtn" style="margin-top:10px">مشاركة الموقع</button></div>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap">صُنع بمحبة لخدمة كتاب الله — <b>نور القرآن</b><br>نسأل الله أن يجعله عملًا نافعًا وخالصًا لوجهه الكريم.</div></footer>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s);
+const toast=(msg)=>{const t=$('#toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2300)};
+let surahs=[],currentSurah=null,audio=null,prayerTimer=null,nextPrayerName='',nextPrayerTime='';
+const prayerNames=[['Fajr','الفجر'],['Sunrise','الشروق'],['Dhuhr','الظهر'],['Asr','العصر'],['Maghrib','المغرب'],['Isha','العشاء']];
+const morning=[
+['أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ','يُقال مرة واحدة'],
+['اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ','يُقال مرة واحدة'],
+['رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا','ثلاث مرات'],
+['سُبْحَانَ اللَّهِ وَبِحَمْدِهِ','مائة مرة'],
+['اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ','أكثر من الصلاة على النبي ﷺ']
+];
+const evening=[
+['أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ','يُقال مرة واحدة'],
+['اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ الْمَصِيرُ','يُقال مرة واحدة'],
+['رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا','ثلاث مرات'],
+['أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ','ثلاث مرات'],
+['أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ','مائة مرة']
+];
+const duas=[
+['دعاء الهداية','اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي'],
+['دعاء تفريج الهم','اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ'],
+['دعاء العلم','رَبِّ زِدْنِي عِلْمًا'],
+['دعاء الوالدين','رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا'],
+['دعاء الدنيا والآخرة','رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ'],
+['دعاء المغفرة','رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ']
+];
+function renderDuas(type='morning'){
+ const data=type==='morning'?morning:type==='evening'?evening:duas;
+ $('#duaList').innerHTML=data.map((d,i)=>`<article class="dua"><h3>${type==='duas'?d[0]:'ذكر '+(i+1)}</h3><p>${type==='duas'?d[1]:d[0]}</p><small>${type==='duas'?'دعاء من الأدعية القرآنية أو المأثورة':d[1]}</small></article>`).join('');
+}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderDuas(b.dataset.tab)}));
+renderDuas();
+
+async function loadSurahs(){
+ try{
+  const r=await fetch('https://api.alquran.cloud/v1/surah');if(!r.ok)throw Error();const j=await r.json();surahs=j.data;renderSurahs(surahs);
+ }catch(e){$('#surahList').innerHTML='<div class="card">تعذّر تحميل السور. تأكد من اتصال الإنترنت ثم أعد تحميل الصفحة.</div>'}
+}
+function renderSurahs(list){
+ $('#surahList').innerHTML=list.map(s=>`<button class="surah" data-id="${s.number}"><span class="num"><span>${s.number}</span></span><span class="surah-info"><b>${s.englishName}</b><small>${s.revelationType==='Meccan'?'مكية':'مدنية'} • ${s.numberOfAyahs} آية</small></span><span class="sname">${s.name}</span></button>`).join('');
+ document.querySelectorAll('.surah').forEach(b=>b.addEventListener('click',()=>openSurah(+b.dataset.id)));
+}
+$('#surahSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();renderSurahs(surahs.filter(s=>s.name.includes(q)||s.englishName.toLowerCase().includes(q)||String(s.number)===q))});
+$('#allSurahs').onclick=()=>{$('#surahSearch').value='';renderSurahs(surahs)};
+async function openSurah(n){
+ const s=surahs.find(x=>x.number===n);if(!s)return;currentSurah=s;$('#reader').classList.add('show');$('#readerTitle').textContent=s.name+' — '+s.englishName;$('#ayahContainer').innerHTML='<p style="text-align:center;color:var(--muted)">جارٍ تحميل الآيات...</p>';$('#reader').scrollIntoView({behavior:'smooth',block:'start'});
+ try{const r=await fetch(`https://api.alquran.cloud/v1/surah/${n}`);const j=await r.json();$('#ayahContainer').innerHTML=j.data.ayahs.map(a=>`<div class="ayah">${a.text} <span>${a.numberInSurah}</span></div>`).join('')}
+ catch(e){$('#ayahContainer').textContent='تعذّر تحميل الآيات. تحقق من الإنترنت.'}
+}
+$('#closeReader').onclick=()=>$('#reader').classList.remove('show');
+$('#playSurah').onclick=()=>{if(!currentSurah)return; if(audio)audio.pause();audio=new Audio(`https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${currentSurah.number}.mp3`);audio.play().catch(()=>toast('تعذّر تشغيل الصوت؛ تحقق من اتصال الإنترنت'))};
+$('#stopAudio').onclick=()=>{if(audio){audio.pause();audio.currentTime=0}};
+$('#favSurah').onclick=()=>{if(!currentSurah)return;let f=JSON.parse(localStorage.getItem('noorFav')||'[]');if(!f.includes(currentSurah.number))f.push(currentSurah.number);localStorage.setItem('noorFav',JSON.stringify(f));toast('تم حفظ السورة في المفضلة على هذا الجهاز')};
+
+function formatTime(t){return t?.split(' ')[0]||'--:--'}
+function parseClock(t){const [h,m]=formatTime(t).split(':').map(Number);const d=new Date();d.setHours(h,m,0,0);return d}
+async function loadPrayer(city='Cairo',country='Egypt',latlon=null){
+ $('#prayerGrid').innerHTML='<div class="pray">جارٍ تحميل المواقيت...</div>';
+ try{
+  const date=new Date();const ds=`${String(date.getDate()).padStart(2,'0')}-${String(date.getMonth()+1).padStart(2,'0')}-${date.getFullYear()}`;
+  const url=latlon?`https://api.aladhan.com/v1/timings/${ds}?latitude=${latlon.lat}&longitude=${latlon.lon}&method=5`:`https://api.aladhan.com/v1/timingsByCity/${ds}?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&method=5`;
+  const r=await fetch(url);if(!r.ok)throw Error();const j=await r.json();const d=j.data;const times=d.timings;
+  $('#cityLabel').textContent=latlon?'موقعك الحالي':city+', '+country;
+  $('#hijriDate').textContent=`${d.date.hijri.weekday.ar} ${d.date.hijri.day} ${d.date.hijri.month.ar} ${d.date.hijri.year} هـ`;
+  $('#prayerGrid').innerHTML=prayerNames.filter(x=>x[0]!=='Sunrise').map(([k,n])=>`<div class="pray" data-time="${formatTime(times[k])}"><b>${n}</b><strong>${formatTime(times[k])}</strong></div>`).join('');
+  updateCountdown(times);if(prayerTimer)clearInterval(prayerTimer);prayerTimer=setInterval(()=>updateCountdown(times),1000);
+ }catch(e){$('#prayerGrid').innerHTML='<div class="pray">لم نتمكن من جلب المواقيت. جرّب اسم مدينة بالإنجليزية مثل Cairo.</div>';$('#countdown').textContent='';}
+}
+function updateCountdown(times){
+ const now=new Date();const keys=prayerNames.filter(x=>x[0]!=='Sunrise');let next=null,nextDate=null;
+ for(const [k,n] of keys){const t=parseClock(times[k]);if(t>now){next={k,n};nextDate=t;break}}
+ if(!next){const [k,n]=keys[0];next={k,n};nextDate=parseClock(times[k]);nextDate.setDate(nextDate.getDate()+1)}
+ const diff=Math.max(0,Math.floor((nextDate-now)/1000));const h=String(Math.floor(diff/3600)).padStart(2,'0'),m=String(Math.floor(diff%3600/60)).padStart(2,'0'),s=String(diff%60).padStart(2,'0');
+ $('#countdown').innerHTML=`الصلاة القادمة: <strong>${next.n}</strong> — متبقي <strong>${h}:${m}:${s}</strong>`;
+ document.querySelectorAll('.pray').forEach(el=>el.classList.toggle('active',el.querySelector('b')?.textContent===next.n));
+}
+$('#cityBtn').onclick=()=>{const c=$('#cityInput').value.trim();if(c)loadPrayer(c,'Egypt')};
+$('#geoBtn').onclick=()=>{if(!navigator.geolocation){toast('المتصفح لا يدعم تحديد الموقع');return}navigator.geolocation.getCurrentPosition(p=>loadPrayer('', '',{lat:p.coords.latitude,lon:p.coords.longitude}),()=>toast('لم نتمكن من تحديد موقعك. اسمح للموقع باستخدام الموقع الجغرافي.'))};
+loadPrayer();loadSurahs();
+
+let count=0;$('#countBtn').onclick=()=>{$('#counter').textContent=++count};$('#resetBtn').onclick=()=>{count=0;$('#counter').textContent=count};
+$('#themeBtn').onclick=()=>{document.body.classList.toggle('light');localStorage.setItem('noorTheme',document.body.classList.contains('light')?'light':'dark')};
+if(localStorage.getItem('noorTheme')==='light')document.body.classList.add('light');
+$('#shareBtn').onclick=async()=>{try{if(navigator.share)await navigator.share({title:'نور القرآن',text:'موقع نور القرآن الكريم والأذكار ومواقيت الصلاة',url:location.href});else{await navigator.clipboard.writeText(location.href);toast('تم نسخ رابط الموقع')}}catch(e){}};
+const ayat=[['﴿ فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ﴾','سورة الشرح — ٦'],['﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾','سورة الرعد — ٢٨'],['﴿ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنْتُمْ ﴾','سورة الحديد — ٤'],['﴿ وَقُلْ رَبِّ زِدْنِي عِلْمًا ﴾','سورة طه — ١١٤']];
+const daily=ayat[Math.floor(Date.now()/86400000)%ayat.length];$('#dailyAyah').textContent=daily[0];$('#dailyRef').textContent=daily[1];
+</script>
+</body>
+</html>
